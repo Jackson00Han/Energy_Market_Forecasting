@@ -1,0 +1,19 @@
+# ---- training logs & artifacts ----
+/runs/                   # 你现在的 BlockRNN/TensorBoard 目录
+**/lightning_logs/       # 有些设置会写到这个目录
+**/checkpoints/          # Pytorch-Lightning 默认ckpt目录
+*.ckpt
+*.pt
+*.pth
+
+# Optuna & 实验数据库（可选）
+/optuna_block_lstm.db
+# *.db                   # 如果还有别的SQLite想忽略，可放开
+
+# 大文件缓存/追踪工具（按需）
+/wandb/
+/mlruns/
+
+# 常见缓存
+__pycache__/
+*.pyc
