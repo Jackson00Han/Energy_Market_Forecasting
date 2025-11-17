@@ -1,5 +1,6 @@
 # ---- Training logs & artifacts ----
 /runs/
+/models/
 **/lightning_logs/
 **/checkpoints/
 *.ckpt
